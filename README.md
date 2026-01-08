@@ -70,7 +70,7 @@ uv pip install -r requirements.txt
 
 3. **Run:**
 ```bash
-uv run software.py
+uv run main.py
 ```
 
 
