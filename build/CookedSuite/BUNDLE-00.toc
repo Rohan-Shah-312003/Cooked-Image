@@ -1,0 +1,3 @@
+([('CookedSuite',
+   '/Users/rohanshah/Desktop/cooked/dist/CookedSuite',
+   'EXECUTABLE')],)
