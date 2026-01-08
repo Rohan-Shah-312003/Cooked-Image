@@ -20,8 +20,8 @@ class CookedSuite:
         self.tab_create = tk.Frame(self.notebook, bg="#2c3e50")
         self.tab_viewer = tk.Frame(self.notebook, bg="#1a1a1a")
 
-        self.notebook.add(self.tab_create, text="  Chef (Convert)  ")
-        self.notebook.add(self.tab_viewer, text="  Diner (View)  ")
+        self.notebook.add(self.tab_create, text="  Create Image  ")
+        self.notebook.add(self.tab_viewer, text="  View  Image")
         self.notebook.pack(expand=True, fill="both")
 
         self.png_2_cooked()
@@ -49,7 +49,7 @@ class CookedSuite:
         btn.pack(pady=20)
 
         self.create_status = tk.Label(
-            self.tab_create, text="Ready to cook...", fg="#bdc3c7", bg="#2c3e50"
+            self.tab_create, text="Ready to create...", fg="#bdc3c7", bg="#2c3e50"
         )
         self.create_status.pack()
 
@@ -83,7 +83,7 @@ class CookedSuite:
 
             messagebox.showinfo("Chef", f"Created New Image! \nOriginal: {raw_size/1024:.1f}KB\nNew: {new_size/1024:.1f}KB\nSaved {ratio:.1f}% space!")
         except Exception as e:
-            messagebox.showerror("Error", f"Cooking failed: {e}")
+            messagebox.showerror("Error", f"Image creation failed: {e}")
 
     def image_viewer(self):
         tk.Label(
